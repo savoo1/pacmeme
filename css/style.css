@@ -93,6 +93,10 @@ body > .skiptranslate {
   font-weight: 400;
   line-height: normal;
   padding-top: 3px;
+  transition: all ease 0.5s;
+}
+.btn-nav:hover {
+  background-color: #e4cb8b;
 }
 
 .btn-t1 {
@@ -115,6 +119,10 @@ body > .skiptranslate {
   justify-content: center;
   display: inline-flex;
   gap: 8px;
+  transition: all ease 0.5s;
+}
+.btn-t1:hover {
+  background-color: #e4cb8b;
 }
 
 .btn-t2 {
@@ -140,6 +148,12 @@ nav {
 }
 nav .lines {
   display: none;
+}
+nav .onlymobile {
+  display: none;
+}
+nav .onlymobile .socm {
+  margin-top: 0;
 }
 nav .row {
   display: flex;
@@ -401,17 +415,13 @@ nav .right {
   background-repeat: no-repeat;
   background-repeat: repeat-x;
 }
-.hero .connect-wallet .loading-line .inside::after {
+.hero .connect-wallet .loading-line .gifimg {
   content: "";
   position: absolute;
-  right: -10px;
+  right: -15px;
   top: -10px;
   width: 30px;
   height: 30px;
-  background: url("../img/f.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 .hero .connect-wallet .loading-line .effect {
   position: absolute;
@@ -632,7 +642,7 @@ nav .right {
   transition: all ease 0.5s;
 }
 .hero .connect-wallet button:hover {
-  background-color: #ffc8ff;
+  background-color: #e4cb8b;
 }
 .hero .connect-wallet .ch-line {
   display: flex;
@@ -823,7 +833,7 @@ nav .right {
   transition: all ease 0.5s;
 }
 .hero .connect-wallet .s-rewards .claim:hover {
-  background-color: #ffc8ff;
+  background-color: #e4cb8b;
 }
 .hero .connect-wallet .smtit {
   color: var(--Black, #080513);
@@ -1004,6 +1014,7 @@ nav .right {
   position: absolute;
   right: -133px;
   top: -20px;
+  transform: scaleX(-1);
 }
 .about .btns {
   display: flex;
@@ -1798,22 +1809,6 @@ footer ul a {
   font-weight: 400;
   line-height: normal;
 }
-footer .socm {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 21px;
-}
-footer .socm a {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #ffaf02;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 footer .last-line {
   margin-top: 47px;
   color: #403c4e;
@@ -1826,4 +1821,46 @@ footer .last-line {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.socm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 21px;
+}
+.socm a {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ffaf02;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+}
+.socm a:hover {
+  background-color: #e4cb8b;
+}
+
+.logopl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #080513;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Party Confetti";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+.logopl img {
+  max-width: 28px;
+}
+.logopl img {
+  margin-right: 2px;
 }/*# sourceMappingURL=style.css.map */

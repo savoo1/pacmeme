@@ -102,6 +102,10 @@ body > .skiptranslate {
 	font-weight: 400;
 	line-height: normal;
 	padding-top: 3px;
+	transition: all ease 0.5s;
+	&:hover {
+		background-color: #e4cb8b;
+	}
 }
 
 .btn-t1 {
@@ -122,6 +126,10 @@ body > .skiptranslate {
 	@include flex-center();
 	display: inline-flex;
 	gap: 8px;
+	transition: all ease 0.5s;
+	&:hover {
+		background-color: #e4cb8b;
+	}
 }
 .btn-t2 {
 	@include flex-center();
@@ -143,6 +151,12 @@ nav {
 	z-index: 999999999;
 	.lines {
 		display: none;
+	}
+	.onlymobile {
+		display: none;
+		.socm {
+			margin-top: 0;
+		}
 	}
 	.row {
 		@include flex-between-center();
@@ -419,17 +433,13 @@ nav {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-repeat: repeat-x;
-		.inside::after {
+		.gifimg {
 			content: "";
 			position: absolute;
-			right: -10px;
+			right: -15px;
 			top: -10px;
 			width: 30px;
 			height: 30px;
-			background: url("../img/f.png");
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: 100%;
 		}
 
 		.effect {
@@ -653,7 +663,7 @@ nav {
 		padding: 9px;
 		transition: all ease 0.5s;
 		&:hover {
-			background-color: #ffc8ff;
+			background-color: #e4cb8b;
 		}
 	}
 
@@ -834,7 +844,7 @@ nav {
 			margin-top: 24px;
 			transition: all ease 0.5s;
 			&:hover {
-				background-color: #ffc8ff;
+				background-color: #e4cb8b;
 			}
 		}
 	}
@@ -1017,6 +1027,7 @@ nav {
 			position: absolute;
 			right: -133px;
 			top: -20px;
+			transform: scaleX(-1);
 		}
 	}
 	.btns {
@@ -1815,18 +1826,7 @@ footer {
 			line-height: normal;
 		}
 	}
-	.socm {
-		@include flex-center();
-		gap: 15px;
-		margin-top: 21px;
-		a {
-			width: 40px;
-			height: 40px;
-			border-radius: 100%;
-			background-color: #ffaf02;
-			@include flex-center();
-		}
-	}
+
 	.last-line {
 		margin-top: 47px;
 		color: #403c4e;
@@ -1839,5 +1839,41 @@ footer {
 		text-align: center;
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+}
+
+.socm {
+	@include flex-center();
+	gap: 15px;
+	margin-top: 21px;
+	a {
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		background-color: #ffaf02;
+		@include flex-center();
+		transition: all ease 0.5s;
+		&:hover {
+			background-color: #e4cb8b;
+		}
+	}
+}
+
+.logopl {
+	@include flex-center();
+	color: #080513;
+	leading-trim: both;
+	text-edge: cap;
+	font-family: "Party Confetti";
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	position: relative;
+	img {
+		max-width: 28px;
+	}
+	img {
+		margin-right: 2px;
 	}
 }

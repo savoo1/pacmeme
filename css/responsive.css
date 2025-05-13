@@ -110,6 +110,9 @@
   .wrapper {
     max-width: 700px;
   }
+  nav .onlymobile {
+    display: block;
+  }
   nav .middle {
     position: relative;
     left: unset;
