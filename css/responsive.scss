@@ -1,0 +1,753 @@
+@media (max-width: 1350px) {
+    .game-token .tokenomics .diagram-d {
+        right: 0;
+        top: 40px;
+        max-width: 660px;
+    }
+}
+@media (max-width: 1300px) {
+    .wrapper {
+        max-width: 980px;
+    }
+    .hero .left h1 {
+        font-size: 108px;
+    }
+    .hero .left p {
+        font-size: 22px;
+        max-width: 400px;
+    }
+    .hero .content .right {
+        max-width: 430px;
+        padding-top: 37px;
+    }
+    .hero .avatar {
+        left: calc(50% - 550px);
+        bottom: 61px;
+        max-width: 600px;
+    }
+    .about p {
+        font-size: 20px;
+        max-width: 450px;
+    }
+    .videopplace-sec .title h2,
+    .joinus h2,
+    .faq h2,
+    .howtobuy h2,
+    .roadmap .tit h2,
+    .game-token .tokenomics h2,
+    .game-token h2,
+    .about h2 {
+        font-size: 70px;
+    }
+    .about .box .right-box-avatar {
+        right: -93px;
+        top: 30px;
+        max-width: 570px;
+    }
+    .about .boxes .sm-box {
+        max-width: calc(33.33% - 15px);
+    }
+    h2 {
+        line-height: 110% !important;
+    }
+    .about h2 {
+        margin-bottom: 10px;
+    }
+    .about .box {
+        padding: 70px 80px 30px;
+    }
+    .videopplace-sec .title p {
+        white-space: nowrap;
+    }
+
+    .videopplace-sec .videof {
+        height: 500px;
+    }
+    .videopplace-sec {
+        min-height: unset;
+        padding-bottom: 100px;
+    }
+    .game-token {
+        min-height: unset;
+    }
+    .game-token .tokenomics .token-gif {
+        margin-top: -20px;
+        margin-left: -130px;
+        max-width: 630px;
+        margin-bottom: -60px;
+    }
+    .game-token .tokenomics .diagram-d {
+        max-width: 530px;
+    }
+    .game-token .shadow2 {
+        left: calc(50% - 790px);
+    }
+    .roadmap .boxes .in h3 {
+        font-size: 24px;
+    }
+    .roadmap .boxes .in ul li {
+        font-size: 21px;
+    }
+    .joinus,
+    .faq,
+    .howtobuy {
+        min-height: unset;
+        padding: 100px 0;
+    }
+    .faq-card .question {
+        font-size: 30px;
+    }
+    .faq-card .answer p {
+        font-size: 20px;
+    }
+    .joinus .left {
+        max-width: 520px;
+    }
+    .joinus .join-img {
+        right: calc(50% - 520px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        max-width: 700px;
+    }
+
+    nav .middle {
+        position: relative;
+        left: unset;
+        right: unset;
+    }
+    nav .left {
+        position: relative;
+        z-index: 99999999;
+    }
+    nav .middle {
+        position: fixed;
+        flex-direction: column;
+        .mobileview {
+            display: flex;
+        }
+        ul {
+            flex-direction: column;
+        }
+        top: 0px;
+        left: 0;
+        right: 0;
+        gap: 24px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        max-height: calc(100vh - 91px);
+        overflow: auto;
+        justify-content: start;
+        visibility: hidden;
+        opacity: 0;
+        transition: all ease 0.5s;
+
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0px 5px 0px 0px #000;
+        backdrop-filter: blur(23.850000381469727px);
+    }
+    .mobile-right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 3px;
+    }
+    nav {
+        min-height: 82px;
+    }
+    nav .right {
+        // display: none;
+        .btn-nav {
+            display: none;
+        }
+    }
+    nav {
+        .lines {
+            display: flex !important;
+            flex-direction: column;
+            gap: 3px;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 48px;
+            border-bottom: 3px solid #080513;
+            background: #ffaf02;
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+            .line {
+                width: 18px;
+                height: 2px;
+                background-color: #181529;
+                transition: all ease 0.5s;
+            }
+        }
+    }
+    .navbar.active {
+        // background-color: #fff;
+        position: fixed;
+    }
+    .navbar.active .lines {
+        .line:nth-child(1) {
+            transform: rotate(50deg);
+        }
+        .line:nth-child(2) {
+            transform: rotate(-50deg);
+            margin-top: -5px;
+        }
+        .line:nth-child(3) {
+            transform: rotate(50deg);
+            margin-top: -7px;
+            opacity: 0;
+        }
+    }
+    .navbar.active .middle {
+        opacity: 1;
+        visibility: visible;
+        top: 77px;
+        z-index: 9999;
+    }
+    nav .row .middle ul li a {
+        font-size: 24px;
+    }
+    .hero .content .right {
+        position: relative;
+    }
+    .hero .connect-wallet {
+        position: relative;
+    }
+    .hero .content {
+        flex-direction: column;
+    }
+    .hero .content .right {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .hero .content .right {
+        padding-top: 100px;
+    }
+    .hero .connect-wallet .btns-cw-left {
+        flex-direction: row;
+        top: -75px;
+        max-width: 508px;
+        margin: auto;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .hero .connect-wallet .btns-cw-left a {
+        width: calc(50% - 10px);
+    }
+    .hero .content {
+        .left {
+            margin: auto;
+            text-align: center;
+        }
+    }
+    .hero {
+        padding-bottom: 500px;
+    }
+    .hero .avatar {
+        left: calc(50% - 230px);
+        bottom: 1px;
+        max-width: 491px;
+    }
+    .hero .shadow {
+        bottom: -830px;
+        left: calc(50% - 1120px);
+    }
+    .about {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .about .box .whois {
+        left: -82px;
+        top: -75px;
+        max-width: 280px;
+    }
+    .about p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about h2 {
+        text-align: center;
+    }
+    .about .btns {
+        justify-content: center;
+    }
+    .about .box {
+        min-height: unset;
+        padding-bottom: 300px;
+    }
+    .about .box .right-box-avatar {
+        right: unset;
+        top: unset;
+        max-width: 440px;
+        bottom: -130px;
+        left: 50%;
+        margin: auto;
+        transform: translateX(-50%);
+    }
+    .about .boxes {
+        flex-direction: column;
+        gap: 20px;
+        .sm-box {
+            width: 100%;
+            max-width: 100%;
+            padding: 15px;
+            min-height: unset;
+        }
+    }
+    .about .whyus {
+        margin-top: 150px;
+    }
+    .videopplace-sec .title {
+        flex-direction: column;
+    }
+    .videopplace-sec .videof {
+        height: 340px;
+    }
+    .game-token .boxes {
+        flex-direction: column;
+    }
+    .game-token .boxes .left,
+    .game-token .boxes .right {
+        width: 100%;
+    }
+    .game-token .boxes {
+        gap: 25px;
+    }
+    .game-token .btn-place a {
+        min-height: 65px;
+    }
+    .game-token .tokenomics {
+        margin-top: 80px;
+        h2 {
+            text-align: center;
+        }
+    }
+    .game-token .tokenomics .token-gif {
+        margin: auto;
+    }
+    .game-token .tokenomics .diagram-d {
+        display: none;
+    }
+    .game-token .tokenomics .token-gif {
+        max-width: 550px;
+        margin: auto;
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-50%) scaleX(-1);
+    }
+    .game-token {
+        .tokenomics-phone {
+            margin: auto;
+            display: block;
+            margin-bottom: -100px;
+        }
+    }
+    .game-token .shadow2 {
+        left: calc(50% - 360px);
+        top: unset;
+        bottom: 0;
+        width: 670px;
+        min-width: 670px;
+    }
+    .howtobuy h2 {
+        text-align: center;
+    }
+    .howtobuy .boxes {
+        flex-direction: column;
+        gap: 20px;
+        .box {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .roadmap .boxes .box {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 70px;
+        .in {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .roadmap .boxes .in .no .bgno {
+        width: 44px;
+        height: 44px;
+        background-size: 100%;
+        font-size: 24px;
+    }
+    .roadmap .boxes .orderbox .in .no::after {
+        transform: unset;
+    }
+    .roadmap .boxes .orderbox .in .no,
+    .roadmap .boxes .in .no {
+        right: unset;
+        left: -130px;
+    }
+    .roadmap .boxes .in .no::after {
+        background-size: 100%;
+        width: 80px;
+        height: 100px;
+        transform: translateY(-50%) !important;
+        right: unset !important;
+        left: 29px;
+        top: 50%;
+        right: unset !important;
+    }
+    .roadmap .boxes .box::before {
+        display: none;
+    }
+    .roadmap .boxes .box:first-child:after {
+        display: none;
+    }
+    .roadmap .boxes {
+        gap: 20px;
+    }
+    .roadmap .boxes .in {
+        min-height: unset;
+    }
+    .roadmap .boxes .box {
+        min-height: unset;
+        position: relative;
+        z-index: 9;
+    }
+    .roadmap .boxes {
+        position: relative;
+    }
+    footer .last-line {
+        font-size: 18px;
+    }
+    .joinus p,
+    .roadmap .tit p {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .roadmap .boxes::after {
+        position: absolute;
+        content: "";
+        left: 7px;
+        top: 30px;
+        border-radius: 13.061px;
+        background: #ffaf02;
+        width: 10px;
+        bottom: 30px;
+    }
+    .roadmap .boxes .in .no::before {
+        width: 70px;
+        height: 70px;
+        top: 34px;
+        left: 30px;
+    }
+    .roadmap .boxes .in .no {
+        background: transparent;
+    }
+    .videopplace-sec .title h2,
+    .joinus h2,
+    .faq h2,
+    .howtobuy h2,
+    .roadmap .tit h2,
+    .game-token .tokenomics h2,
+    .game-token h2,
+    .about h2 {
+        font-size: 60px;
+    }
+    .joinus .join-img {
+        right: unset;
+        position: relative;
+        margin: auto;
+        display: block;
+        max-width: 400px;
+        top: unset;
+        margin-top: 30px;
+    }
+    .joinus .left {
+        margin: auto;
+        text-align: center;
+    }
+    .joinus .btns {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinus {
+        padding-bottom: 50px;
+    }
+    .about .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero .left h1 {
+        font-size: 52px;
+        margin-bottom: 17px;
+    }
+    .hero .left p {
+        font-size: 20px;
+    }
+    .hero:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        min-height: 1000px;
+        background: linear-gradient(
+            180deg,
+            rgba(19, 4, 4, 0.54) 0%,
+            rgba(19, 4, 4, 0.43) 30.95%,
+            rgba(19, 4, 4, 0) 62.51%
+        );
+        backdrop-filter: blur(0px);
+    }
+    .hero .connect-wallet {
+        margin: 0;
+        // margin-top: 260px;
+        padding: 16px;
+        min-height: unset;
+    }
+    .hero .connect-wallet h3 {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+    .hero .connect-wallet .time {
+        margin-top: 20px;
+    }
+    .hero .connect-wallet .loading-line {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .hero .connect-wallet .input {
+        margin-top: 15px;
+    }
+    .hero .connect-wallet .ch-line {
+        margin-top: 15px;
+    }
+    .hero .connect-wallet .btns-cw a {
+        width: calc(50% - 8px);
+    }
+    .about .box {
+        padding: 40px 20px;
+        padding-bottom: 300px;
+    }
+    .videopplace-sec .title h2,
+    .joinus h2,
+    .faq h2,
+    .howtobuy h2,
+    .roadmap .tit h2,
+    .game-token .tokenomics h2,
+    .game-token h2,
+    .about h2 {
+        font-size: 42px;
+    }
+    .about .whyus p,
+    .about p {
+        font-size: 18px;
+    }
+    .about .boxes {
+        margin-top: 28px;
+    }
+    .about .boxes .sm-box {
+        img {
+            max-width: 78px;
+        }
+    }
+    .about .boxes .sm-box h3 {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    .about .boxes .sm-box p {
+        font-size: 20px;
+    }
+    .about .boxes .sm-box {
+        padding: 25px 15px;
+    }
+    .about .boxes .sm-box .sm-p {
+        width: 100%;
+    }
+    .videopplace-sec {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .videopplace-sec .videof {
+        height: 270px;
+    }
+    .videopplace-sec .videoplace .place {
+        max-width: 100px;
+    }
+    .howtobuy .boxes .box {
+        min-height: unset;
+    }
+    .howtobuy .boxes .box h3 {
+        font-size: 24px;
+    }
+    .howtobuy .boxes .box p {
+        font-size: 20px;
+    }
+    .howtobuy .boxes .box .no {
+        font-size: 120px;
+    }
+    .roadmap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .roadmap .boxes {
+        margin-top: 30px;
+    }
+    .roadmap .boxes .in h3 {
+        font-size: 20px;
+    }
+    .roadmap .boxes .in ul li {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .roadmap .boxes .in ul li:after {
+        left: 1px;
+        top: 7px;
+        width: 7px;
+        height: 7px;
+    }
+    .roadmap .boxes .in {
+        padding: 20px;
+    }
+    .faq h2 {
+        text-align: center;
+    }
+    .faq .faq-box {
+        padding: 15px 20px;
+    }
+    .faq-card .question {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .faq-card .question .navigator:before,
+    .faq-card .question .navigator:after {
+        width: 20px;
+    }
+    .faq-card .answer p {
+        font-size: 18px;
+    }
+    .about .whyus {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .game-token .boxes .left,
+    .game-token .boxes .right,
+    .game-token .boxes {
+        gap: 15px;
+    }
+    .game-token .boxes .box .l {
+        padding-right: 10px;
+    }
+    .game-token .boxes .box {
+        padding-left: 10px;
+        padding-right: 10px;
+        min-height: 68px;
+    }
+    .game-token .boxes .box img {
+        max-width: 45px;
+    }
+    .game-token .boxes .nmbr {
+        width: 44px;
+        height: 44px;
+    }
+    .game-token .boxes .box .l .stat {
+        margin-right: 4px;
+        width: 48px;
+    }
+    .game-token .boxes .box .l .img-pl {
+        margin-right: 10px;
+    }
+    .game-token .boxes .box .no {
+        font-size: 16px;
+    }
+    .game-token .boxes .box .no {
+        min-width: 80px;
+    }
+    .game-token .boxes .box .r .stars {
+        position: absolute;
+        left: -20px;
+        top: -1px;
+        max-width: 36px;
+    }
+    .hero .connect-wallet .row-inputs {
+        flex-direction: column;
+        width: 100%;
+        .input {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 0px;
+        }
+    }
+    .hero .avatar {
+        left: calc(50% - 190px);
+        bottom: -19px;
+        max-width: 411px;
+    }
+    .hero {
+        padding-bottom: 390px;
+    }
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .videopplace-sec .title h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 430px) {
+    .hero .connect-wallet .time .box {
+        width: calc(25% - 3px);
+    }
+    .hero .avatar {
+        left: calc(50% - 160px);
+        bottom: 31px;
+        max-width: 351px;
+    }
+    .game-token .boxes .box .l h4 {
+        font-size: 17px;
+    }
+    .game-token .btn-place a,
+    .videopplace-sec .btn-place a {
+        min-width: 300px;
+    }
+    .hero .connect-wallet .s-boxes .box h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 370px) {
+    .hero .connect-wallet .input .p-place {
+        font-size: 12px;
+    }
+    .hero .connect-wallet .lastp .l a {
+        font-size: 12px;
+    }
+    .hero .connect-wallet .lastp .r a {
+        font-size: 11px;
+    }
+    .hero .avatar {
+        left: calc(50% - 160px);
+        bottom: 31px;
+        max-width: 326px;
+    }
+    .game-token .boxes .box .l h4 {
+        font-size: 16px;
+    }
+    .hero .connect-wallet .s-boxes .box h3 {
+        font-size: 14px;
+    }
+}
