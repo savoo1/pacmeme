@@ -416,7 +416,6 @@ nav .right {
   background-repeat: repeat-x;
 }
 .hero .connect-wallet .loading-line .gifimg {
-  content: "";
   position: absolute;
   right: -15px;
   top: -10px;
