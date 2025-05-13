@@ -1015,6 +1015,7 @@ nav .right {
   right: -133px;
   top: -20px;
   transform: scaleX(-1);
+  max-width: 740px;
 }
 .about .btns {
   display: flex;
