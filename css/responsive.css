@@ -103,7 +103,8 @@
     max-width: 520px;
   }
   .joinus .join-img {
-    right: calc(50% - 520px);
+    right: calc(50% - 570px);
+    max-width: 600px;
   }
 }
 @media (max-width: 1000px) {
@@ -247,8 +248,12 @@
   }
   .hero .avatar {
     left: calc(50% - 230px);
-    bottom: 1px;
+    bottom: -60px;
     max-width: 491px;
+    display: none;
+  }
+  .hero .avatar-phone {
+    display: block;
   }
   .hero .shadow {
     bottom: -830px;
@@ -440,6 +445,10 @@
   .roadmap .boxes .in .no {
     background: transparent;
   }
+  .roadmap .boxes .in .no .bgno::before {
+    max-width: 45px;
+    left: 48px;
+  }
   .videopplace-sec .title h2,
   .joinus h2,
   .faq h2,
@@ -455,9 +464,11 @@
     position: relative;
     margin: auto;
     display: block;
-    max-width: 400px;
+    max-width: 550px;
+    width: 100%;
     top: unset;
-    margin-top: 30px;
+    margin-top: -50px;
+    margin-bottom: -50px;
   }
   .joinus .left {
     margin: auto;
@@ -476,6 +487,10 @@
   }
 }
 @media (max-width: 550px) {
+  .joinus .join-img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .hero .left h1 {
     font-size: 52px;
     margin-bottom: 17px;
@@ -673,7 +688,7 @@
   }
   .hero .avatar {
     left: calc(50% - 190px);
-    bottom: -19px;
+    bottom: -70px;
     max-width: 411px;
   }
   .hero {
@@ -692,9 +707,9 @@
     width: calc(25% - 3px);
   }
   .hero .avatar {
-    left: calc(50% - 160px);
-    bottom: 31px;
-    max-width: 351px;
+    left: calc(50% - 180px);
+    bottom: -66px;
+    max-width: 411px;
   }
   .game-token .boxes .box .l h4 {
     font-size: 17px;
@@ -718,9 +733,9 @@
     font-size: 11px;
   }
   .hero .avatar {
-    left: calc(50% - 160px);
-    bottom: 31px;
-    max-width: 326px;
+    left: calc(50% - 180px);
+    bottom: -99px;
+    max-width: 436px;
   }
   .game-token .boxes .box .l h4 {
     font-size: 16px;

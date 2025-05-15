@@ -337,6 +337,9 @@ nav {
 		transform: scaleX(-1);
 		max-width: 720px;
 	}
+	.avatar-phone {
+		display: none;
+	}
 	.shadow {
 		position: absolute;
 		bottom: -700px;
@@ -983,7 +986,7 @@ nav {
 .about {
 	padding-top: 150px;
 	padding-bottom: 101px;
-	background: url("../img/bg-gray.webp") no-repeat center center;
+	background: url("../img/bg-gray.png") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1209,14 +1212,16 @@ nav {
 }
 
 .game-token {
-	background: url("../img/bg-gray.webp") no-repeat center center;
+	background: url("../img/bg-gray.png") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	min-height: 1865px;
 	padding-top: 120px;
+	position: relative;
 	overflow: hidden;
+
 	.tokenomics-phone {
 		display: none;
 	}
@@ -1423,6 +1428,15 @@ nav {
 				line-height: 140%; /* 33.6px */
 				margin-top: 6px;
 				max-width: 270px;
+				position: relative;
+				z-index: 2;
+				a {
+					color: #af9e72;
+					transition: all ease 0.5s;
+					&:hover {
+						color: #e4cb8b;
+					}
+				}
 			}
 			.no {
 				font-family: "Party Confetti";
@@ -1444,13 +1458,21 @@ nav {
 }
 
 .roadmap {
-	padding-top: 116px;
+	padding-top: 70px;
 	padding-bottom: 45px;
-	background: url("../img/bg-gray.webp") no-repeat center center;
+	background: url("../img/bg-gray.png") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	.gifsm {
+		max-width: 400px;
+		margin: auto;
+		display: block;
+		width: 100%;
+	}
 	.tit {
 		h2 {
 			color: #080513;
@@ -1578,10 +1600,30 @@ nav {
 				.bgno {
 					width: 140px;
 					height: 140px;
-					background: url(../img/no-in.svg);
 					@include flex-center();
-					background-repeat: no-repeat;
-					background-position: center;
+					div {
+						position: relative;
+					}
+
+					&::before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background: url(../img/no-in.svg) no-repeat center;
+						background-size: 100%;
+						animation: rotate-bg 15s linear infinite;
+						z-index: 0;
+					}
+				}
+
+				@keyframes rotate-bg {
+					0% {
+						transform: rotate(0deg);
+					}
+					100% {
+						transform: rotate(360deg);
+					}
 				}
 			}
 			.no::after {
@@ -1766,7 +1808,8 @@ nav {
 	.join-img {
 		position: absolute;
 		right: calc(50% - 640px);
-		top: 130px;
+		top: -120px;
+		max-width: 700px;
 	}
 	h2 {
 		color: #080513;
@@ -1875,5 +1918,31 @@ footer {
 	}
 	img {
 		margin-right: 2px;
+	}
+}
+
+.bubble {
+	position: absolute;
+	bottom: -200px;
+	animation-name: float-up;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes float-up {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-3000px) rotate(360deg);
+		opacity: 1;
+	}
+}
+
+.triangles {
+	.wrapper {
+		position: relative;
+		z-index: 100;
 	}
 }

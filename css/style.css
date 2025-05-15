@@ -321,6 +321,9 @@ nav .right {
   transform: scaleX(-1);
   max-width: 720px;
 }
+.hero .avatar-phone {
+  display: none;
+}
 .hero .shadow {
   position: absolute;
   bottom: -700px;
@@ -971,7 +974,7 @@ nav .right {
 .about {
   padding-top: 150px;
   padding-bottom: 101px;
-  background: url("../img/bg-gray.webp") no-repeat center center;
+  background: url("../img/bg-gray.png") no-repeat center center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -1194,10 +1197,11 @@ nav .right {
 }
 
 .game-token {
-  background: url("../img/bg-gray.webp") no-repeat center center;
+  background: url("../img/bg-gray.png") no-repeat center center;
   background-size: cover;
   min-height: 1865px;
   padding-top: 120px;
+  position: relative;
   overflow: hidden;
 }
 .game-token .tokenomics-phone {
@@ -1421,6 +1425,15 @@ nav .right {
   line-height: 140%; /* 33.6px */
   margin-top: 6px;
   max-width: 270px;
+  position: relative;
+  z-index: 2;
+}
+.howtobuy .boxes .box p a {
+  color: #af9e72;
+  transition: all ease 0.5s;
+}
+.howtobuy .boxes .box p a:hover {
+  color: #e4cb8b;
 }
 .howtobuy .boxes .box .no {
   font-family: "Party Confetti";
@@ -1439,10 +1452,18 @@ nav .right {
 }
 
 .roadmap {
-  padding-top: 116px;
+  padding-top: 70px;
   padding-bottom: 45px;
-  background: url("../img/bg-gray.webp") no-repeat center center;
+  background: url("../img/bg-gray.png") no-repeat center center;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.roadmap .gifsm {
+  max-width: 400px;
+  margin: auto;
+  display: block;
+  width: 100%;
 }
 .roadmap .tit h2 {
   color: #080513;
@@ -1575,12 +1596,30 @@ nav .right {
 .roadmap .boxes .in .no .bgno {
   width: 140px;
   height: 140px;
-  background: url(../img/no-in.svg);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+.roadmap .boxes .in .no .bgno div {
+  position: relative;
+}
+.roadmap .boxes .in .no .bgno::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../img/no-in.svg) no-repeat center;
+  background-size: 100%;
+  animation: rotate-bg 15s linear infinite;
+  z-index: 0;
+}
+@keyframes rotate-bg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .roadmap .boxes .in .no::after {
   content: "";
@@ -1741,7 +1780,8 @@ nav .right {
 .joinus .join-img {
   position: absolute;
   right: calc(50% - 640px);
-  top: 130px;
+  top: -120px;
+  max-width: 700px;
 }
 .joinus h2 {
   color: #080513;
@@ -1863,4 +1903,27 @@ footer .last-line {
 }
 .logopl img {
   margin-right: 2px;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -200px;
+  animation-name: float-up;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-3000px) rotate(360deg);
+    opacity: 1;
+  }
+}
+.triangles .wrapper {
+  position: relative;
+  z-index: 100;
 }/*# sourceMappingURL=style.css.map */

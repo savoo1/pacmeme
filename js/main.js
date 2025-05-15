@@ -1,9 +1,9 @@
 $(".navbar .lines").click(function (e) {
   e.preventDefault();
-  if ($(this).parent().parent().parent().parent().hasClass("active")) {
-    $(this).parent().parent().parent().parent().removeClass("active");
+  if ($(this).parent().parent().parent().parent().parent().hasClass("active")) {
+    $(this).parent().parent().parent().parent().parent().removeClass("active");
   } else {
-    $(this).parent().parent().parent().parent().addClass("active");
+    $(this).parent().parent().parent().parent().parent().addClass("active");
   }
 });
 
@@ -256,4 +256,51 @@ $(".scroll2").click(function (e) {
     },
     1000
   );
+});
+
+$(document).ready(function () {
+  const container = $(".triangles");
+
+  const svgTriangle = `
+  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.3996 0.271385L23.9927 24.7554L-0.00767633 17.3572L18.3996 0.271385Z" fill="#F3E3BC"/>
+  </svg>
+  `;
+
+  function createBubble() {
+    const bubble = $(`<div class='bubble'>${svgTriangle}</div>`);
+
+    const size = Math.floor(Math.random() * (200 - 30 + 1)) + 30;
+    const left = Math.random() * 100;
+    const duration = Math.random() * 13 + 25; // 6s to 12s
+    const delay = Math.random() * 2;
+
+    bubble.css({
+      width: `${size}px`,
+      height: `${size}px`,
+      left: `${left}%`,
+      animationDuration: `${duration}s`,
+      animationDelay: `${delay}s`,
+      zIndex: Math.floor(Math.random() * 5),
+    });
+
+    container.append(bubble);
+
+    // Remove after animation ends
+    setTimeout(() => {
+      bubble.remove();
+    }, (duration + delay) * 1000);
+  }
+
+  // Initial burst
+  for (let i = 0; i < 20; i++) {
+    createBubble();
+  }
+
+  // Continuous bubbles
+  setInterval(() => {
+    for (let i = 0; i < 3; i++) {
+      createBubble();
+    }
+  }, 500);
 });
