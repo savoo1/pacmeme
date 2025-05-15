@@ -1,9 +1,9 @@
 $(".navbar .lines").click(function (e) {
   e.preventDefault();
-  if ($(this).parent().parent().parent().parent().parent().hasClass("active")) {
-    $(this).parent().parent().parent().parent().parent().removeClass("active");
+  if ($(this).parent().parent().parent().parent().hasClass("active")) {
+    $(this).parent().parent().parent().parent().removeClass("active");
   } else {
-    $(this).parent().parent().parent().parent().parent().addClass("active");
+    $(this).parent().parent().parent().parent().addClass("active");
   }
 });
 
